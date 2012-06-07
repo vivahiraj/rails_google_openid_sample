@@ -1,0 +1,6 @@
+railsでgoogleへのopenidを利用したサンプルです。
+
+rails 3.2
+ruby 1.9.3
+で試しています。
+
