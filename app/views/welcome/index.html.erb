@@ -1,0 +1,14 @@
+<h1>Welcome#index</h1>
+<p>Find me in app/views/welcome/index.html.erb</p>
+<dif><%= flash.notice %></div>
+<div id="user_nav"> 
+  <% if current_user %> 
+    User Info,
+    <pre>
+    <%= current_user %>
+    </pre>
+    <%= link_to "Sign Out", signout_path %> 
+  <% else %> 
+    <%= link_to "Sign in with Google", "/auth/open_id?openid_url=https://www.google.com/accounts/o8/id" %>
+  <% end %> 
+</div>
